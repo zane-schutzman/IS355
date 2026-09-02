@@ -4,7 +4,7 @@ Task 1: Start Your GitHub Portfolio
 
 
 Evidence:
-![GitHub Profile](allimages/githubprofile.png)
+![GitHub Profile](images/githubprofile.png)
 
 For this task, I set up my GitHub account and created my GitHub profile.
 
@@ -18,7 +18,7 @@ For this task, I used Windows PowerShell to find information about my computer's
 
 
 Evidence:
-![Tutorial 1 Data](allimages/tutorial1data.png)
+![Tutorial 1 Data](images/tutorial1data.png)
 
 
 Commands Used:
