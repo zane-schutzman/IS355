@@ -10,7 +10,7 @@ For this task, I set up my GitHub account and created my GitHub profile.
 
 I also created an images directory in my repository, which will be used to store screenshots and other images that provide evidence of my tutorial activities.
 
-Evidence
+Evidence:
 
 Task 2: View Your Computer Information
 
@@ -21,7 +21,7 @@ Evidence:
 ![Task 2](images/Screenshot%202026-09-02%20152430.png)
 
 
-Commands Used
+Commands Used:
 
 I used the following command to view my computer's memory information:
 
@@ -31,7 +31,7 @@ I used the following command to view my processor information:
 
 Get-ComputerInfo -Property "*processor*"
 
-My Results
+My Results:
 
 CsTotalPhysicalMemory        : 16834949024
 CsPhysicallyInstalledMemory  : 16777216
@@ -42,7 +42,7 @@ OsFreeVirtualMemory          : 6275280
 OsInUseVirtualMemory         : 19602280
 OsMaxProcessMemorySize       : 137438953344
 
-Memory Information and Answers
+Memory Information and Answers:
 
 Total Physical Memory: 16,834,949,024 Bytes
 
@@ -66,7 +66,7 @@ Maximum Process Memory Size: 137,438,953,344 Bytes
 
 My computer has 16 GB of physically installed RAM. PowerShell reports the total physical memory as 16,834,949,024 Bytes.
 
-Processor Results
+Processor Results:
 
 The processor command produced the following results:
 
@@ -86,14 +86,9 @@ Processor: 13th Gen Intel(R) Core(TM) i7-13700H
 
 My computer has 1 physical processor and 20 logical processors. The processor is a 13th Gen Intel(R) Core(TM) i7-13700H.
 
-Evidence
-
-The screenshot below shows the PowerShell commands I used and the results produced by the commands.
-
-![PowerShell Computer Information](images/week1-task2-screenshot.png)
 
 
-Operating System and Disk Information
+Operating System and Disk Information:
 
 The tutorial also asks for information about the computer's operating system and disk sizes.
 
