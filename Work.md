@@ -1,6 +1,8 @@
 Week 1 - Tutorial 1
 
 Task 1: Start Your GitHub Portfolio
+
+
 Evidence:
 ![Task 1](images/Screenshot%202026-09-02%20152325.png)
 
@@ -14,8 +16,10 @@ Task 2: View Your Computer Information
 
 For this task, I used Windows PowerShell to find information about my computer's hardware and memory.
 
+
 Evidence:
 ![Task 2](images/Screenshot%202026-09-02%20152430.png)
+
 
 Commands Used
 
