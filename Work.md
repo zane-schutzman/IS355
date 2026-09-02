@@ -4,7 +4,7 @@ Task 1: Start Your GitHub Portfolio
 
 
 Evidence:
-![Task 1](images/Screenshot%202026-09-02%20152325.png)
+![GitHub Profile Screenshot](images/GitHubProfilesc.svg)
 
 For this task, I set up my GitHub account and created my GitHub profile.
 
@@ -18,7 +18,7 @@ For this task, I used Windows PowerShell to find information about my computer's
 
 
 Evidence:
-![Task 2](images/Screenshot%202026-09-02%20152430.png)
+![PowerShell Tutorial Screenshot](images/PowershellscTUT1.svg)
 
 
 Commands Used:
