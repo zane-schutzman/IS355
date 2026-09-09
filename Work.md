@@ -158,15 +158,15 @@ The most useful part of the tutorial was learning how to document the results of
 
 Overall, I successfully completed the GitHub setup and used PowerShell to find my computer's memory and processor information. I now have a foundation for maintaining my weekly GitHub journal throughout the course.
 
-Week 2 
-Tutorial 2 9/9/26
 # Week 2 - Tutorial 2
 
 ## Task 1: Speedtest
 
 For this task, I used Speedtest to test the performance of my Internet connection.
 
-Evidence:  wifispeed.png
+Evidence: [wifispeed.png](images/wifispeed.png)
+
+![WiFi Speed Test](images/wifispeed.png)
 
 My Speedtest results were:
 
@@ -266,13 +266,17 @@ I also learned that the Internet depends on physical infrastructure. Submarine c
 
 For this task, I used Windows PowerShell to view the network adapters on my computer.
 
-The commands used in the tutorial were:
+### Commands Used
 
+```powershell
+Get-NetAdapter
+```
+
+```powershell
 Get-NetAdapter -Physical
+```
 
-Evidence: MAC Address Results (image)
-
-My Results
+### My Results
 
 The Get-NetAdapter command showed several network adapters on my computer.
 
@@ -322,7 +326,7 @@ MAC Address: 00-FF-B0-35-08-B4
 
 Link Speed: 1 Gbps
 
-What is a MAC Address?
+### What is a MAC Address?
 
 A MAC address is an address associated with a network adapter.
 
@@ -332,7 +336,7 @@ My Wi-Fi adapter's MAC address was:
 
 A MAC address is different from an IP address. The MAC address is associated with the network adapter, while the IP address is used for communication on an IP network.
 
-What I Learned
+### What I Learned
 
 I learned that my computer has multiple network adapters.
 
@@ -342,28 +346,35 @@ My Wi-Fi adapter was the active adapter because its status was listed as Up.
 
 I also learned that network adapters can have different MAC addresses and link speeds.
 
-Task 4: View My Computer and Local Router Information
+---
+
+## Task 4: View My Computer and Local Router Information
 
 For this task, I used PowerShell to view my computer's network configuration and information about my local router.
 
-Commands Used
+### Commands Used
 
 I used:
 
+```powershell
 Get-NetIPConfiguration
+```
 
-Evidence: IP Configuration Results (image)
+Evidence: [netip.png](images/netip.png)
+
+![IP Configuration](images/netip.png)
 
 I also used:
 
+```powershell
 Get-NetIPAddress -InterfaceIndex 20
+```
 
-Evidence: netip.png
-netipaddress.png
+Evidence: [netipaddress.png](images/netipaddress.png)
 
+![IP Address Information](images/netipaddress.png)
 
-
-My Results
+### My Results
 
 My active network interface was Wi-Fi.
 
@@ -409,7 +420,7 @@ Suffix Origin: Dhcp
 
 Address State: Preferred
 
-What I Learned
+### What I Learned
 
 I learned how to use PowerShell to find the IP address assigned to my computer.
 
@@ -423,21 +434,27 @@ I also learned that my default gateway was:
 
 The default gateway is the network device that my computer uses to communicate with networks outside of the local network.
 
-Task 5: Test Connectivity Between Two Devices
+---
+
+## Task 5: Test Connectivity Between Two Devices
 
 For this task, I tested the connection between my computer and another device on the Internet.
 
 The tutorial explains that this is commonly called a ping.
 
-Command Used
+### Command Used
 
 I used:
 
+```powershell
 Test-NetConnection 8.8.8.8
+```
 
-Evidence: netconnection.png
+Evidence: [netconnection.png](images/netconnection.png)
 
-My Results
+![Network Connection Test](images/netconnection.png)
+
+### My Results
 
 Computer Name:
 
@@ -463,7 +480,7 @@ Ping Reply Details (RTT):
 
 9 ms
 
-What is RTT?
+### What is RTT?
 
 RTT stands for Round Trip Time.
 
@@ -473,7 +490,7 @@ My test had an RTT of 9 ms.
 
 The ping succeeded, which means my computer was able to successfully communicate with 8.8.8.8.
 
-What I Learned
+### What I Learned
 
 I learned how to use Test-NetConnection to test whether my computer can communicate with another device.
 
@@ -481,24 +498,29 @@ I also learned what RTT means and how it can be used to measure network delay.
 
 My test showed a successful connection with a round trip time of 9 ms.
 
-Task 6: View DNS to IP Mappings
+---
+
+## Task 6: View DNS to IP Mappings
 
 For this task, I used PowerShell to find the DNS information for a website.
 
-
-Command Used
+### Command Used
 
 I used:
 
+```powershell
 Resolve-DnsName www.wikimedia.org
+```
 
-Evidence: websiteaddress.png
+Evidence: [websiteaddress.png](images/websiteaddress.png)
 
-My Results
+![DNS Results](images/websiteaddress.png)
+
+### My Results
 
 The DNS lookup showed that:
 
-www.wikimedia.org
+[www.wikimedia.org](http://www.wikimedia.org)
 
 is a CNAME record that points to:
 
@@ -512,11 +534,11 @@ The results showed an IPv4 address:
 
 208.80.154.224
 
-DNS Information
+### DNS Information
 
 Domain:
 
-www.wikimedia.org
+[www.wikimedia.org](http://www.wikimedia.org)
 
 CNAME:
 
@@ -530,37 +552,45 @@ IPv4 Address:
 
 208.80.154.224
 
-What is DNS?
+### What is DNS?
 
 DNS stands for Domain Name System.
 
 DNS allows domain names to be associated with IP addresses.
 
-Instead of having to remember an IP address, users can enter a domain name such as www.wikimedia.org.
+Instead of having to remember an IP address, users can enter a domain name such as [www.wikimedia.org](http://www.wikimedia.org).
 
 The Resolve-DnsName command allows me to view the DNS records associated with a domain.
 
-What I Learned
+### What I Learned
 
 I learned how to use PowerShell to find the IP addresses associated with a website.
 
 I also learned that a website can have a CNAME record that points to another domain name.
 
-For www.wikimedia.org, the CNAME was dyna.wikimedia.org.
+For [www.wikimedia.org](http://www.wikimedia.org), the CNAME was dyna.wikimedia.org.
 
 The DNS lookup also provided both an IPv4 address and an IPv6 address.
 
-Task 7: Ping My Local Router
+---
+
+## Task 7: Ping My Local Router
 
 For this task, I found the IP address of my local router and tested the connection between my computer and the router.
 
-Finding the Router
+### Finding the Router
 
 I used:
 
+```powershell
 Get-NetRoute -DestinationPrefix "0.0.0.0/0"
+```
 
-The result showed: router.png
+Evidence: [router.png](images/router.png)
+
+![Router Information](images/router.png)
+
+The result showed:
 
 Interface Index: 20
 
@@ -570,13 +600,17 @@ Next Hop: 10.233.128.1
 
 The next hop of 10.233.128.1 is my local router/default gateway.
 
-Ping Command
+### Ping Command
 
 I then used:
 
+```powershell
 Test-Connection 10.233.128.1 -Count 10
+```
 
-Evidence: Router Ping Results (image)
+Evidence: [router.png](images/router.png)
+
+![Router Ping Results](images/router.png)
 
 The command returned 10 connection attempts to:
 
@@ -586,7 +620,7 @@ The source computer was:
 
 ZANES-DELL
 
-Minimum, Average, and Maximum Delay
+### Minimum, Average, and Maximum Delay
 
 The tutorial asks for the minimum, average, and maximum delay between my computer and local router.
 
@@ -600,7 +634,7 @@ Average Delay: Not recorded in the screenshot
 
 Maximum Delay: Not recorded in the screenshot
 
-Factors That Can Affect Delay
+### Factors That Can Affect Delay
 
 Several factors can affect the delay between my computer and router.
 
@@ -612,7 +646,7 @@ Wireless interference can also affect the connection.
 
 Network conditions can change over time, which means the delay can also change.
 
-What I Learned
+### What I Learned
 
 I learned how to find my local router by looking at the next hop for the default route.
 
@@ -624,33 +658,39 @@ I also learned how to use Test-Connection to send multiple ping requests to the 
 
 I need to make sure that I enter the command correctly if I want PowerShell to calculate the minimum, average, and maximum response times.
 
-Task 8: Find Addresses for a Website
+---
+
+## Task 8: Find Addresses for a Website
 
 For this task, I selected Wikimedia as the website that I wanted to investigate.
 
 The tutorial asks for as much addressing information as possible about a selected website.
 
-Website Selected
+### Website Selected
 
 Website:
 
-www.wikimedia.org
+[www.wikimedia.org](http://www.wikimedia.org)
 
-Command Used
+### Command Used
 
 I used:
 
+```powershell
 Resolve-DnsName www.wikimedia.org
+```
 
-Evidence: Website Address Results (image)
+Evidence: [websiteaddress.png](images/websiteaddress.png)
 
-My Results
+![Website Address Results](images/websiteaddress.png)
+
+### My Results
 
 The DNS lookup returned the following information:
 
 Website:
 
-www.wikimedia.org
+[www.wikimedia.org](http://www.wikimedia.org)
 
 CNAME:
 
@@ -664,15 +704,15 @@ IPv6 Address:
 
 2620:0:861:ed1a::1
 
-How I Found the Addresses
+### How I Found the Addresses
 
-I used the Resolve-DnsName PowerShell command to look up the DNS information for www.wikimedia.org.
+I used the Resolve-DnsName PowerShell command to look up the DNS information for [www.wikimedia.org](http://www.wikimedia.org).
 
-The command showed that www.wikimedia.org has a CNAME record pointing to dyna.wikimedia.org.
+The command showed that [www.wikimedia.org](http://www.wikimedia.org) has a CNAME record pointing to dyna.wikimedia.org.
 
 The DNS results for dyna.wikimedia.org included both an IPv4 address and an IPv6 address.
 
-Address Types Found
+### Address Types Found
 
 IPv4 Address:
 
@@ -686,7 +726,7 @@ CNAME:
 
 dyna.wikimedia.org
 
-What I Learned
+### What I Learned
 
 I learned that a website can have several types of addressing information.
 
@@ -694,7 +734,9 @@ The DNS lookup allowed me to find the website's CNAME, IPv4 address, and IPv6 ad
 
 This showed me how DNS information can be used to learn how a website is addressed on a network.
 
-Task 9: Home Internet Connection (Optional)
+---
+
+## Task 9: Home Internet Connection (Optional)
 
 This task was optional.
 
@@ -702,7 +744,7 @@ The tutorial asks me to find the type of home Internet connection, ISP, data rat
 
 The Speedtest screenshot from Task 1 shows that my connection was associated with Loyola University Maryland and that the test used Starry, Inc. in Ashburn, VA.
 
-Available Speedtest Information
+### Available Speedtest Information
 
 Connection/Network Shown:
 
@@ -728,9 +770,13 @@ Ping:
 
 42 ms
 
+Evidence: [wifispeed.png](images/wifispeed.png)
+
+![Speedtest Results](images/wifispeed.png)
+
 The screenshot only provides the results from one speed test, so I did not record multiple testing times without additional evidence.
 
-Why Speed Tests Can Change
+### Why Speed Tests Can Change
 
 Speed test results can change at different times because network conditions can change.
 
@@ -742,7 +788,7 @@ Wi-Fi signal strength and interference can also affect the speed.
 
 The server being used for the test can also affect the result.
 
-Speed Test vs. Data Rate
+### Speed Test vs. Data Rate
 
 The data rate is the rate associated with the Internet connection.
 
@@ -750,11 +796,7 @@ A speed test measures the actual performance of the connection at the time the t
 
 The two numbers can be different because the actual performance of a network can change depending on network conditions.
 
-Evidence
-
-Speedtest Results (image)
-
-What I Learned
+### What I Learned
 
 This tutorial taught me more about computer networking and how devices communicate over a network.
 
@@ -774,11 +816,11 @@ My local router/default gateway was:
 
 I learned how to use Test-NetConnection to test connectivity to another device. My connection to 8.8.8.8 succeeded and had an RTT of 9 ms.
 
-I also learned how DNS works. Using Resolve-DnsName, I found that www.wikimedia.org points to dyna.wikimedia.org and that the DNS information included both an IPv4 and IPv6 address.
+I also learned how DNS works. Using Resolve-DnsName, I found that [www.wikimedia.org](http://www.wikimedia.org) points to dyna.wikimedia.org and that the DNS information included both an IPv4 and IPv6 address.
 
 The tutorial also helped me understand that the Internet depends on many connected networks and physical infrastructure, including submarine cables.
 
-Challenges
+### Challenges
 
 One challenge I experienced during this tutorial was understanding all of the different networking information shown by PowerShell.
 
@@ -794,7 +836,7 @@ One issue I experienced was with the Task 7 command used to calculate the minimu
 
 Because the actual delay values were not shown, I did not make up results. I recorded the router address and the 10 ping attempts that were shown in the screenshot.
 
-Project Contribution
+### Project Contribution
 
 My main contribution during this tutorial was documenting my networking activities and recording the PowerShell commands and results.
 
@@ -806,7 +848,7 @@ I also continued organizing my GitHub portfolio by keeping screenshots in the im
 
 This builds on the GitHub portfolio that I created during Tutorial 1.
 
-Reflection
+### Reflection
 
 This tutorial helped me understand networking through hands-on activities.
 
@@ -818,7 +860,7 @@ The IP configuration activity helped me understand how my computer receives an I
 
 The connectivity test was useful because I was able to test my connection to 8.8.8.8 and see that the ping succeeded with an RTT of 9 ms.
 
-The DNS activity helped me understand how a domain name can be connected to an IP address. I used Resolve-DnsName to find the DNS information for www.wikimedia.org.
+The DNS activity helped me understand how a domain name can be connected to an IP address. I used Resolve-DnsName to find the DNS information for [www.wikimedia.org](http://www.wikimedia.org).
 
 I also learned that the Internet is made up of many networks and physical connections. The network maps showed how networks around the world are connected.
 
