@@ -166,7 +166,7 @@ Tutorial 2 9/9/26
 
 For this task, I used Speedtest to test the performance of my Internet connection.
 
-Evidence: [Speedtest Results](images/speedtest.png) ([image](images/speedtest.png))
+Evidence:  wifispeed.png
 
 My Speedtest results were:
 
@@ -358,7 +358,10 @@ I also used:
 
 Get-NetIPAddress -InterfaceIndex 20
 
-Evidence: IP Address Results (image)
+Evidence: netip.png
+netipaddress.png
+
+
 
 My Results
 
@@ -432,7 +435,7 @@ I used:
 
 Test-NetConnection 8.8.8.8
 
-Evidence: Connectivity Test (image)
+Evidence: netconnection.png
 
 My Results
 
@@ -482,13 +485,14 @@ Task 6: View DNS to IP Mappings
 
 For this task, I used PowerShell to find the DNS information for a website.
 
+
 Command Used
 
 I used:
 
 Resolve-DnsName www.wikimedia.org
 
-Evidence: DNS Results (image)
+Evidence: websiteaddress.png
 
 My Results
 
@@ -556,7 +560,7 @@ I used:
 
 Get-NetRoute -DestinationPrefix "0.0.0.0/0"
 
-The result showed:
+The result showed: router.png
 
 Interface Index: 20
 
