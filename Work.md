@@ -736,45 +736,6 @@ This showed me how DNS information can be used to learn how a website is address
 
 ---
 
-## Task 9: Home Internet Connection (Optional)
-
-This task was optional.
-
-The tutorial asks me to find the type of home Internet connection, ISP, data rate, and speed test results at different times.
-
-The Speedtest screenshot from Task 1 shows that my connection was associated with Loyola University Maryland and that the test used Starry, Inc. in Ashburn, VA.
-
-### Available Speedtest Information
-
-Connection/Network Shown:
-
-Loyola University Maryland
-
-Speedtest Server:
-
-Starry, Inc.
-
-Server Location:
-
-Ashburn, VA
-
-Download Speed:
-
-157.38 Mbps
-
-Upload Speed:
-
-78.48 Mbps
-
-Ping:
-
-42 ms
-
-Evidence: [wifispeed.png](images/wifispeed.png)
-
-![Speedtest Results](images/wifispeed.png)
-
-The screenshot only provides the results from one speed test, so I did not record multiple testing times without additional evidence.
 
 ### Why Speed Tests Can Change
 
