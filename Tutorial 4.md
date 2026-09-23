@@ -4,7 +4,7 @@
 
 ### Evidence: Network Adapter
 
-<img src="./images/tut4/Netadapterphysical.png" alt="Network Adapter">
+./images/tut4/Netadapterphysical.png
 
 I used the following command to view my physical network adapters:
 
