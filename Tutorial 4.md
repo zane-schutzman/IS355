@@ -15,8 +15,7 @@ Get-NetAdapter -Physical
 My primary physical network adapter was **Wi-Fi**, with an interface index of **19**.
 
 Evidence: Routing Table
-
-![Routing Table](images/netroute.png)
+![Routing Table](images/tut4/netroute.png)
 
 I used the following command to view the routing table for my primary interface:
 
@@ -59,7 +58,7 @@ Task 2: Trace Path Through the Internet
 
 Harvard University
 
-![Harvard Traceroute](images/havardtrace.png)
+![Harvard Traceroute](images/tut4/havardtrace.png)
 
 I used the following command:
 
@@ -76,7 +75,7 @@ There were several `Request timed out` responses, but the trace still reached th
 
 Stanford University
 
-![Stanford Traceroute](images/stanfordtrace.png)
+![Stanford Traceroute](images/tut4/stanfordtrace.png)
 
 I used the following command:
 
@@ -93,7 +92,7 @@ There were many timeouts between the early Zayo hops and the final destination. 
 
 Oxford University
 
-![Oxford Traceroute](images/oxfordtrace.png)
+![Oxford Traceroute](images/tut4/oxfordtrace.png)
 
 I used the following command:
 
@@ -152,7 +151,7 @@ Task 3: IP Address Lookup
 
 Loyola Network
 
-![Loyola Network IP Lookup](images/phoneip.png)
+![Loyola Network IP Lookup](images/tut4/phoneip.png)
 
 I used an online IP lookup service to see what information could be identified about my network.
 
@@ -170,7 +169,7 @@ I did not include my actual IP address because it is not necessary for the journ
 
 Second Network
 
-![Second Network IP Lookup](images/whatsmyip.png)
+![Second Network IP Lookup](images/tut4/whatsmyip.png)
 
 I repeated the IP lookup using a second network through my phone.
 
@@ -218,7 +217,7 @@ IP geolocation is not necessarily an exact representation of where a device is p
 
 DB-IP Lite Database
 
-![DB-IP Lite Database](images/dbiplite.png)
+![DB-IP Lite Database](images/tut4/dbiplite.png)
 
 I also downloaded the **DB-IP Country Lite** database. The file I downloaded was named:
 
