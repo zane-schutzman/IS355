@@ -99,11 +99,7 @@ I tested three different university websites:
 
 The Oxford website was used as my international destination.
 
----
-
 ## Harvard Traceroute
-
-### Evidence: Harvard Traceroute
 
 ![Harvard Traceroute](https://github.com/zane-schutzman/IS355/raw/main/images/tut%204/havardtrace.png)
 
@@ -121,11 +117,9 @@ harvard-edu.go-vip.net [192.0.66.20]
 
 ### Harvard Results
 
-**Number of hops:** 15
-
-**Final round-trip times:** 6 ms, 6 ms, and 9 ms
-
-**Approximate average final delay:** 7 ms
+* **Number of hops:** 15
+* **Final round-trip times:** 6 ms, 6 ms, and 9 ms
+* **Approximate average final delay:** 7 ms
 
 Several network providers could be identified from the traceroute.
 
@@ -141,13 +135,9 @@ which identifies **Lumen**.
 
 Some router names also contained identifiers such as `bwi9` and `iad93`. These names may suggest locations associated with the Baltimore/Washington and Washington/Dulles areas, although router hostnames do not guarantee the exact physical location of a router.
 
-Several hops returned `Request timed out`. However, the traceroute continued and eventually reached the destination at hop 15. Therefore, the timeouts did not prevent the traffic from reaching Harvard.
-
----
+Several hops returned `Request timed out`. However, the traceroute continued and eventually reached the destination at hop 15.
 
 ## Stanford Traceroute
-
-### Evidence: Stanford Traceroute
 
 ![Stanford Traceroute](https://github.com/zane-schutzman/IS355/raw/main/images/tut%204/stanfordtrace.png)
 
@@ -165,11 +155,9 @@ stanford.netlifyglobalcdn.com [3.33.186.135]
 
 ### Stanford Results
 
-**Number of hops:** 17
-
-**Final round-trip times:** 8 ms, 6 ms, and 11 ms
-
-**Approximate average final delay:** 8 ms
+* **Number of hops:** 17
+* **Final round-trip times:** 8 ms, 6 ms, and 11 ms
+* **Approximate average final delay:** 8 ms
 
 Hops 4 through 6 again showed routers associated with Zayo.
 
@@ -185,11 +173,7 @@ There were many `Request timed out` results between hops 7 and 16. However, the 
 
 The Stanford route took 17 hops compared with 15 hops for Harvard. However, the final round-trip delays were still relatively similar.
 
----
-
 ## International Traceroute — University of Oxford
-
-### Evidence: Oxford Traceroute
 
 ![Oxford Traceroute](https://github.com/zane-schutzman/IS355/raw/main/images/tut%204/oxfordtrace.png)
 
@@ -207,11 +191,9 @@ www.ox.ac.uk.cdn.cloudflare.net [104.20.34.13]
 
 ### Oxford Results
 
-**Number of hops:** 13
-
-**Final round-trip times:** 46 ms, 28 ms, and 7 ms
-
-**Approximate average final delay:** 27 ms
+* **Number of hops:** 13
+* **Final round-trip times:** 46 ms, 28 ms, and 7 ms
+* **Approximate average final delay:** 27 ms
 
 Several hops contained `zayo.com` in their hostnames, showing that Zayo was involved in the route.
 
@@ -237,9 +219,7 @@ This indicates that the website was using Cloudflare infrastructure.
 
 Therefore, the traceroute does not prove that the final server was physically located at the University of Oxford in the United Kingdom. The trace ended at the Cloudflare address `104.20.34.13`.
 
-This was important because it showed me that a website's domain name does not necessarily mean that the traceroute will end at a physical server located at that organization's location.
-
----
+This showed me that a website's domain name does not necessarily mean that the traceroute will end at a physical server located at that organization's location.
 
 ## Traceroute Comparison
 
@@ -253,13 +233,13 @@ This was important because it showed me that a website's domain name does not ne
 
 The traceroute to the University of Oxford website reached the destination after 13 hops. The final hop had round-trip times ranging from 7 to 46 milliseconds, with an average of approximately 27 milliseconds.
 
-The route traveled through multiple networks and routers. Zayo was identifiable from several router hostnames along the route. Some router names also appeared to contain location-related abbreviations, although these names cannot be used as definitive proof of the physical location of the routers.
+The route traveled through multiple networks and routers. Zayo was identifiable from several router hostnames along the route.
 
 The Oxford website resolved to Cloudflare infrastructure rather than directly identifying a physical University of Oxford server. This means that the traceroute showed the network path to the Cloudflare infrastructure serving the website rather than necessarily showing the complete physical path to an Oxford University server.
 
 The traceroute also showed several intermediate routers that did not respond to the traceroute requests. These appeared as `Request timed out`. However, later routers responded and the destination was reached successfully.
 
-Internet delay can be affected by several factors. These include the physical distance that traffic travels, the number of routers involved, network congestion, and the routing decisions made by Internet networks. Communication within a local network generally involves fewer intermediate devices and shorter distances, while communication across the Internet can involve many different networks and routers.
+Internet delay can be affected by several factors. These include the physical distance that traffic travels, the number of routers involved, network congestion, and the routing decisions made by Internet networks.
 
 ### What I Learned
 
@@ -283,25 +263,18 @@ For this task, I used an online IP address lookup tool to examine the network an
 
 ## Loyola Network IP Lookup
 
-### Evidence: What Is My IP
-
 ![Loyola Network IP Lookup](https://github.com/zane-schutzman/IS355/raw/main/images/tut%204/whatsmyip.png)
 
 The first test was performed using the Loyola University Maryland network.
 
 ### Loyola Network Results
 
-**ISP:** Loyola University Maryland
-
-**Country:** United States
-
-**State/Region:** Maryland
-
-**City:** Baltimore
-
-**ASN:** 36413
-
-**Services:** None detected
+* **ISP:** Loyola University Maryland
+* **Country:** United States
+* **State/Region:** Maryland
+* **City:** Baltimore
+* **ASN:** 36413
+* **Services:** None detected
 
 The lookup identified the network as belonging to Loyola University Maryland and associated it with Baltimore, Maryland.
 
@@ -309,11 +282,7 @@ The lookup did not necessarily identify my exact physical location. Instead, the
 
 Because the ISP was identified as Loyola University Maryland, the location may represent the university's network location rather than the exact location of my individual computer.
 
----
-
 ## Second Network IP Lookup
-
-### Evidence: Second Network
 
 ![Second Network IP Lookup](https://github.com/zane-schutzman/IS355/raw/main/images/tut%204/phoneip.png)
 
@@ -321,17 +290,12 @@ I then performed the same test using a second network.
 
 ### Second Network Results
 
-**ISP:** AT&T Enterprises LLC
-
-**Country:** United States
-
-**State/Region:** Virginia
-
-**City:** Richmond
-
-**ASN:** 7018
-
-**Services:** None detected
+* **ISP:** AT&T Enterprises LLC
+* **Country:** United States
+* **State/Region:** Virginia
+* **City:** Richmond
+* **ASN:** 7018
+* **Services:** None detected
 
 The second network was associated with AT&T Enterprises LLC and the lookup identified the IP as being associated with Richmond, Virginia.
 
@@ -352,11 +316,7 @@ The Loyola network was associated with Baltimore, Maryland, while the AT&T netwo
 
 This demonstrates that IP geolocation does not necessarily identify the exact physical location of a person or computer. The location can instead represent the geographic location associated with the ISP or its network infrastructure.
 
----
-
 ## IP Geolocation Database
-
-### Evidence: DB-IP Lite Database
 
 ![DB-IP Lite Database](https://github.com/zane-schutzman/IS355/raw/main/images/tut%204/dbiplite.png)
 
@@ -380,7 +340,7 @@ I also learned that the public IP address seen by a website is associated with t
 
 The two network tests showed this clearly. The Loyola network was associated with Baltimore, Maryland, while the AT&T network was associated with Richmond, Virginia.
 
-The IP lookup was therefore useful for identifying the ISP and an approximate geographic location, but it was not necessarily an exact representation of where the computer or person was physically located.
+The IP lookup was useful for identifying the ISP and an approximate geographic location, but it was not necessarily an exact representation of where the computer or person was physically located.
 
 The DB-IP database also helped demonstrate how IP addresses can be organized into ranges and associated with countries.
 
