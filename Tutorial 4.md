@@ -4,7 +4,7 @@
 
 ### Evidence: Network Adapter
 
-![Network Adapter](images/tut 4/Netadapterphysical.png)
+![Network Adapter](images/tut4/Netadapterphysical.png)
 
 I used the following command to view my physical network adapters:
 
@@ -16,7 +16,7 @@ My primary physical network adapter was **Wi-Fi**, with an interface index of **
 
 ### Evidence: Routing Table
 
-![Routing Table](images/tut 4/netroute.png)
+![Routing Table](images/tut4/netroute.png)
 
 I used the following command to view the routing table for my primary interface:
 
@@ -43,7 +43,7 @@ The `/19` network covers the address range from `10.233.128.0` through `10.233.1
 
 ### Harvard University
 
-![Harvard Traceroute](images/tut 4/havardtrace.png)
+![Harvard Traceroute](images/tut4/havardtrace.png)
 
 I used the following command:
 
@@ -53,15 +53,15 @@ tracert www.harvard.edu
 
 The trace reached the destination in **15 hops**. The final three responses were approximately **9 ms, 6 ms, and 6 ms**, giving an approximate average RTT of **7 ms**.
 
-Some of the network providers that appeared in the trace included **Zayo** and **Lumen**. Several router names included locations such as `bwi9`, `iad93`, and `wdc12`, which may indicate network locations in the Baltimore/Washington, D.C. area.
+Some of the network providers that appeared in the trace included **Zayo** and **Lumen**. Several router names included `bwi9`, `iad93`, and `wdc12`, which may indicate network locations in the Baltimore/Washington, D.C. area.
 
 There were several `Request timed out` responses, but the trace still reached the final destination. This shows that some routers did not respond to traceroute requests even though traffic continued through the network.
 
 ### Stanford University
 
-![Stanford Traceroute](images/tut 4/stanfordtrace.png)
+![Stanford Traceroute](images/tut4/stanfordtrace.png)
 
-I used:
+I used the following command:
 
 ```powershell
 tracert www.stanford.edu
@@ -75,9 +75,9 @@ There were many timeouts between the early Zayo hops and the final destination. 
 
 ### Oxford University
 
-![Oxford Traceroute](images/tut 4/oxfordtrace.png)
+![Oxford Traceroute](images/tut4/oxfordtrace.png)
 
-I used:
+I used the following command:
 
 ```powershell
 tracert www.ox.ac.uk
@@ -97,7 +97,7 @@ There were several timeouts in the middle of the trace, but the destination was 
 | Stanford    |   17 |             ~8 ms | Zayo, AWS Global Accelerator     |
 | Oxford      |   13 |            ~27 ms | Zayo, Cloudflare                 |
 
-The number of hops does not directly determine the amount of delay. For example, Oxford had fewer hops than Stanford but had a higher average final RTT. Delay can be affected by the physical distance, routing path, congestion, and the networks being used.
+The number of hops does not directly determine the amount of delay. For example, Oxford had fewer hops than Stanford but had a higher average RTT. Delay can be affected by physical distance, routing paths, congestion, and the networks being used.
 
 ### What I Learned from the International Destination
 
@@ -111,7 +111,7 @@ Compared with the Harvard and Stanford traces, the Oxford trace had a higher RTT
 
 ### Loyola Network
 
-![Loyola Network IP Lookup](images/tut 4/whatsmyip.png)
+![Loyola Network IP Lookup](images/tut4/whatsmyip.png)
 
 I used an online IP lookup service to see what information could be identified about my network.
 
@@ -128,7 +128,7 @@ I did not include my actual IP address because it is not necessary for the journ
 
 ### Second Network
 
-![Second Network IP Lookup](images/tut 4/phoneip.png)
+![Second Network IP Lookup](images/tut4/phoneip.png)
 
 I repeated the IP lookup using a second network through my phone.
 
@@ -157,7 +157,7 @@ IP geolocation is not necessarily an exact representation of where a device is p
 
 ### DB-IP Lite Database
 
-![DB-IP Lite Database](images/tut 4/dbiplite.png)
+![DB-IP Lite Database](images/tut4/dbiplite.png)
 
 I also downloaded the **DB-IP Country Lite** database. The file I downloaded was named:
 
