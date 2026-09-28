@@ -36,8 +36,8 @@ I used the developer tools in my web browser to view the cookies stored by a web
 
 Evidence: Cookies
 
-[Cookie Information](PASTE-YOUR-GITHUB-LINK-HERE) ([image](PASTE-YOUR-RAW-IMAGE-LINK-HERE))
 
+[Xfinity Cookies](https://github.com/zane-schutzman/IS355/blob/main/images/Tut5/xfinity%20cookies.png) ([image](https://github.com/zane-schutzman/IS355/raw/main/images/Tut5/xfinity%20cookies.png))
 I opened the website and used the browser's Developer Tools to view its cookies.
 
 I accessed the cookies by:
