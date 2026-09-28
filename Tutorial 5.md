@@ -134,25 +134,8 @@ For `www.lmu.edu`, the root server helps direct the DNS resolver toward the `.ed
 
 ### DNS Resolution Diagram
 
-```mermaid
-flowchart TD
-    A[User Computer]
-    B[DNS Resolver]
-    C[DNS Root Server]
-    D[.edu TLD Server]
-    E[Authoritative DNS Server for lmu.edu]
-    F[Final IP Address]
 
-    A -->|1. Request www.lmu.edu| B
-    B -->|2. Query root server| C
-    C -->|3. Refer to .edu servers| B
-    B -->|4. Query .edu TLD server| D
-    D -->|5. Refer to authoritative server| B
-    B -->|6. Query authoritative server| E
-    E -->|7. Return DNS record| B
-    B -->|8. Return result| A
-    A -->|9. Connect using IP address| F
-```
+![Zane Schutzman's Computer](images/Tut5/computer.png)
 
 ### What I Learned
 
