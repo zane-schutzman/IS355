@@ -61,11 +61,11 @@ I also learned that the **2.4 GHz and 5 GHz bands** can be used by the same netw
 
 The following screenshot shows the Wi-Fi interface information collected using PowerShell:
 
-![Wi-Fi Interface](images/Tut6/wifiinterface.png)
+![Wi-Fi Details](images/tut6/wifi.png)
 
 The Wi-Fi scan results can also be included as evidence:
 
-![Wi-Fi Access Point Scan](images/Tut6/wifiscan.png)
+![Scan Wi-Fi Networks](images/tut6/scan%20wifis.png)
 
 ---
 
