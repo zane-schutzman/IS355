@@ -4,6 +4,8 @@
 **Student:** Zane Schutzman
 **Date:** October 13, 2026
 
+![Module Assessment](images/tut7/moduleasses.png)
+
 ## Capture note
 
 The capture used for the observed packet analysis was downloaded from a website, not supplied by the professor. The packets inspected and recorded were ICMP Frames 634 and 635. The `arp` display filter returned no packets. The details below distinguish what was observed in the capture from general protocol explanations. HTTP-specific packet values cannot be verified from the ICMP packets collected so far.
@@ -11,6 +13,8 @@ The capture used for the observed packet analysis was downloaded from a website,
 ---
 
 # Task 1 — Analyze a Ping Packet Capture
+
+![Ping Test](images/tut7/ping.png)
 
 ## 1(a). Inspect the packets
 
@@ -44,6 +48,8 @@ MAC: 50:c7:09:1b:90:a0                          MAC: 00:16:3c:cb:72:42
 ```
 
 The MAC addresses above are the Ethernet addresses recorded in the two inspected frames. Ethernet addresses identify interfaces on the local link represented by each frame; they do not necessarily identify the ultimate remote host across every router.
+
+![Ping Test in Wireshark](images/tut7/pingws.png)
 
 ## 1(c). Explain ARP, its sender, recipient, and purpose
 
@@ -249,6 +255,7 @@ HTTP request frame: size not collected
 
 The required PNG and editable `.drawio` diagram should be created from the actual HTTP request packet once that packet has been inspected.
 
+![Wireshark Packet Analysis](images/tut7/wireshark.png)
 ---
 
 # Task 3 — Optional Packet Structure Exercise
@@ -295,42 +302,8 @@ The assignment directs students to [Malware Traffic Analysis](https://www.malwar
 
 To complete the analysis, use the capture specified by the instructor or the selected exercise from the assigned source. Record the capture name/date, filters used, relevant frame numbers and timestamps, source/destination addresses, protocols, and the packet evidence supporting each conclusion. Do not claim that traffic is malicious based only on a display-filter label or an IP address.
 
----
 
-# GitHub Submission Checklist
-
-- Record Frame 634 ICMP Echo Request details.
-- Record Frame 635 ICMP Echo Reply details.
-- Record the observed Ethernet MAC and IPv4 addresses.
-- Test the `arp` filter and record that no ARP packets appeared.
-- Explain ARP and provide a general ARP layout while noting it was not captured.
-- Explain and diagram the observed ICMP request.
-- Capture and add Wireshark screenshots of Frames 634 and 635.
-- Inspect the HTTP capture and replace the unavailable HTTP-specific findings with observed values.
-- Create the HTTP request packet diagram as PNG and include its `.drawio` source.
-- Complete Task 3's diagrams/routing tables if the optional task is required.
-- Complete Task 4 with evidence from the assigned traffic-analysis capture.
-- Verify all image links and file paths on GitHub.
-
-## Suggested repository structure
-
-```
-IS355/
-└── Tutorial7/
-    ├── Tutorial 7.md
-    ├── images/
-    │   └── tut7/
-    │       ├── frame634-icmp-request.png
-    │       ├── frame635-icmp-reply.png
-    │       ├── http-request-diagram.png
-    │       ├── network-diagram.png
-    │       └── icmp-ip-diagram.png
-    └── diagrams/
-        └── tut7/
-            ├── http-request-diagram.drawio
-            ├── network-diagram.drawio
-            └── icmp-ip-diagram.drawio
-```
+![Network Diagram](images/tut7/networkdiagram.png)
 
 ## What I Learned
 
